@@ -1,4 +1,4 @@
-# Sebastian Raschka 2014-2024
+# Sebastian Raschka 2014-2023
 # mlxtend Machine Learning Library Extensions
 # Author: Sebastian Raschka <sebastianraschka.com>
 #
@@ -34,7 +34,7 @@ def test_invalid_labels_1():
     else:
         objtype = "set([(0, 1)])"
 
-    expect = "Labels not in %s.\nFound (1, 2)" % objtype
+    expect = "Labels not in %s.\nFound (np.int64(1), np.int64(2))" % objtype
 
     assert_raises(AttributeError, expect, ada.fit, X, y2, {(0, 1)})
 
